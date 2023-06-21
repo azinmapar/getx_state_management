@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
  * * step 4: For updating data
  * $ controller.intendedFunction()
  * * step 5: For reading data first we should put the widget that shows data in a builder
- * $ GetBuilder<CounterController>(builder: (value){})
+ * $ GetBuilder<CounterController>(id: 'id in whatever type' ,builder: (value){})
  * * step 6: For reading data inside builder
  * $ controller.intendedData
  * * step 7: For reading and writing in other files and screens create a controller and find the class in getX (we have put it in  getX in step 3)

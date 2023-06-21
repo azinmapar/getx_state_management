@@ -5,7 +5,7 @@ class CounterController extends GetxController {
 
   void increment() {
     counter++;
-    update();
+    update(['1']);
   }
 }
 
@@ -13,5 +13,6 @@ class CounterController extends GetxController {
  * ! State Management with GetX
  * * Our class should extend GetxController
  * * For telling other that we have updated the data
- * $ update()
+ * $ update(['id'])
+ * * Only widgets with the specified id like above and widgets with no id will be rebuilt
  */

@@ -20,12 +20,14 @@ class Screen2 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            GetBuilder<CounterController>(builder: (value) {
-              return Text(
-                controller.counter.toString(),
-                style: const TextStyle(fontSize: 30.0),
-              );
-            }),
+            GetBuilder<CounterController>(
+                id: '1',
+                builder: (value) {
+                  return Text(
+                    controller.counter.toString(),
+                    style: const TextStyle(fontSize: 30.0),
+                  );
+                }),
             ElevatedButton(
               onPressed: () {
                 // * Next page (Normal Mode)
